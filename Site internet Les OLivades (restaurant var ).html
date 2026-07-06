@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Les Olivades | Restaurant Collobrières</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Inter:wght@200;300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css?v=2">
+</head>
+<body>
+
+    <!-- ===== LOADING SCREEN ===== -->
+    <div id="loading-screen">
+        <div class="loading-content">
+            <div class="logo-circle">
+                <div class="logo-ghost">Les Olivades</div>
+                <div class="logo-reveal">Les Olivades</div>
+            </div>
+            <div class="loading-bar">
+                <div class="loading-progress"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ===== CURSEUR PERSONNALISÉ ===== -->
+
+
+    <!-- ===== NAVIGATION ===== -->
+    <nav id="navbar">
+        <div class="nav-logo">LES OLIVADES</div>
+        <button class="nav-toggle" id="navToggle" aria-label="Menu" aria-expanded="false">
+            <span></span><span></span><span></span>
+        </button>
+        <div class="nav-links" id="navLinks">
+            <a href="#philosophie" data-text="Philosophie">Philosophie</a>
+            <a href="#galerie" data-text="Galerie">Galerie</a>
+            <a href="#carte" data-text="La Carte">La Carte</a>
+            <a href="#avis" data-text="Avis">Avis</a>
+            <a href="#reservation" data-text="Réserver">Réserver</a>
+        </div>
+    </nav>
+
+    <!-- ===== HERO ===== -->
+    <section class="hero" id="accueil">
+        <div class="hero-bg"></div>
+        <div class="hero-overlay"></div>
+        <div class="hero-decorations">
+            <div class="deco-line deco-left"></div>
+            <div class="deco-line deco-right"></div>
+        </div>
+        <div class="hero-content">
+            <p class="hero-subtitle">Restaurant — Collobrières</p>
+            <h1 class="hero-logo">Les Olivades</h1>
+            <div class="hero-divider"></div>
+            <p class="hero-tagline">
+                Nico et Alban vous accueillent sur la Place de la Libération, à l'ombre des platanes, au cœur du village de Collobrières.
+            </p>
+            <p class="hero-address">
+                5 Place de la Libération<br>
+                83610 Collobrières<br>
+                04 94 28 16 24
+            </p>
+            <a href="#reservation" class="hero-cta">Réserver une table</a>
+        </div>
+        <div class="scroll-indicator">
+            <span>Défiler</span>
+            <div class="scroll-line"></div>
+        </div>
+    </section>
+
+    <!-- ===== CONTENU PRINCIPAL ===== -->
+    <main id="content">
+
+        <!-- PHILOSOPHIE -->
+        <section class="intro" id="philosophie">
+            <div class="intro-container">
+                <div class="intro-left">
+                    <h2 class="section-title" data-reveal>
+                        Une cuisine <em>authentique</em><br>et <em>solaire</em>
+                    </h2>
+                </div>
+                <div class="intro-right">
+                    <p class="text-reveal" data-reveal>
+                        Nico et Alban vous accueillent sur la Place de la Libération, à l'ombre des platanes. Aux Olivades, nous croyons qu'une carte minimaliste est le gage d'une exigence absolue : tout est fait maison, à partir de produits locaux bruts.
+                    </p>
+                    <p class="text-reveal" data-reveal>
+                        Du tartare de thon au tiramisu framboise-pistache, chaque assiette est une invitation à voyager au cœur de notre terroir provençal.
+                    </p>
+                    <a href="#galerie" class="btn-link" data-reveal>Découvrir les assiettes</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- GALERIE -->
+        <section class="gallery" id="galerie">
+            <div class="section-header" data-reveal>
+                <h2 class="section-title">La Carte Visuelle</h2>
+            </div>
+            <div class="carousel-wrapper">
+                <button class="carousel-nav carousel-prev" aria-label="Précédent">&#10094;</button>
+                <div class="carousel-scene" id="carouselScene">
+                    <div class="carousel-track" id="carouselTrack">
+                    <div class="carousel-slide active" data-index="0">
+                        <img src="images/plat-tataki-thon.jpg" alt="Plats Les Olivades" loading="lazy">
+                        <div class="slide-caption">
+                            <div class="slide-dish"><span class="slide-name">Steak grillé, légumes & pommes de terre</span><span class="slide-price">28€</span></div>
+                            <div class="slide-dish"><span class="slide-name">Tataki de Thon, 4 sésames</span><span class="slide-price">24€</span></div>
+                            <div class="slide-dish"><span class="slide-name">Poulpe grillé, pommes de terre</span><span class="slide-price">24€</span></div>
+                            <div class="slide-dish"><span class="slide-name">Palourdes</span><span class="slide-price">~26€</span></div>
+                        </div>
+                    </div>
+                    <div class="carousel-slide" data-index="1">
+                        <img src="images/plat-tartare-boeuf.jpg" alt="Plats Les Olivades" loading="lazy">
+                        <div class="slide-caption">
+                            <div class="slide-dish"><span class="slide-name">Dessert crème & fruits rouges</span><span class="slide-price">10€</span></div>
+                            <div class="slide-dish"><span class="slide-name">Tartare de Bœuf, frites & parmesan</span><span class="slide-price">22€</span></div>
+                            <div class="slide-dish"><span class="slide-name">Viande marinée, crudités</span><span class="slide-price">24€</span></div>
+                        </div>
+                    </div>
+                    <div class="carousel-slide" data-index="2">
+                        <img src="images/plat-grand-aïoli.jpg" alt="Plats Les Olivades" loading="lazy">
+                        <div class="slide-caption">
+                            <div class="slide-dish"><span class="slide-name">Bouchées chocolat skewers</span><span class="slide-price">12€</span></div>
+                            <div class="slide-dish"><span class="slide-name">Dessert chocolat mousse</span><span class="slide-price">10€</span></div>
+                            <div class="slide-dish"><span class="slide-name">Le Grand Aïoli</span><span class="slide-price">26€</span></div>
+                            <div class="slide-dish"><span class="slide-name">Rillettes & pain grillé</span><span class="slide-price">12€</span></div>
+                        </div>
+                    </div>
+                    <div class="carousel-slide" data-index="3">
+                        <img src="images/plat-sous-noix-veau.jpg" alt="Plats Les Olivades" loading="lazy">
+                        <div class="slide-caption">
+                            <div class="slide-dish"><span class="slide-name">Sous-noix de Veau, légumes croquants</span><span class="slide-price">22€</span></div>
+                            <div class="slide-dish"><span class="slide-name">Tartare de Thon, légumes</span><span class="slide-price">24€</span></div>
+                            <div class="slide-dish"><span class="slide-name">Tiramisu</span><span class="slide-price">12€</span></div>
+                            <div class="slide-dish"><span class="slide-name">Éclair mousse</span><span class="slide-price">12€</span></div>
+                        </div>
+                    </div>
+                    <div class="carousel-slide" data-index="4">
+                        <img src="images/plat-lasagnes.jpg" alt="Plats Les Olivades" loading="lazy">
+                        <div class="slide-caption">
+                            <div class="slide-dish"><span class="slide-name">Salade de chèvre, croutons & jambon</span><span class="slide-price">14€</span></div>
+                            <div class="slide-dish"><span class="slide-name">Noix de Saint-Jacques, légumes</span><span class="slide-price">~28€</span></div>
+                            <div class="slide-dish"><span class="slide-name">Lasagnes de Bœuf</span><span class="slide-price">~20€</span></div>
+                            <div class="slide-dish"><span class="slide-name">Salade de pâtes, viande & pommes de terre</span><span class="slide-price">22€</span></div>
+                        </div>
+                    </div>
+                    <div class="carousel-slide" data-index="5">
+                        <img src="images/plat-tiramisu.jpg" alt="Plats Les Olivades" loading="lazy">
+                        <div class="slide-caption">
+                            <div class="slide-dish"><span class="slide-name">Brioche maison</span><span class="slide-price">-</span></div>
+                            <div class="slide-dish"><span class="slide-name">Tiramisu Framboise Pistache</span><span class="slide-price">12€</span></div>
+                            <div class="slide-dish"><span class="slide-name">Escalope panée, frites</span><span class="slide-price">22€</span></div>
+                            <div class="slide-dish"><span class="slide-name">Vins de Collobrières</span><span class="slide-price">-</span></div>
+                        </div>
+                    </div>
+                    <div class="carousel-slide" data-index="6">
+                        <img src="images/plat-eclair-chataigne.jpg" alt="Plats Les Olivades" loading="lazy">
+                        <div class="slide-caption">
+                            <div class="slide-dish"><span class="slide-name">Éclair Mousse Châtaigne</span><span class="slide-price">12€</span></div>
+                            <div class="slide-dish"><span class="slide-name">Salade de fruits & crème</span><span class="slide-price">10€</span></div>
+                            <div class="slide-dish"><span class="slide-name">Éclair glace, abricot & fraise</span><span class="slide-price">12€</span></div>
+                        </div>
+                    </div>
+                    <div class="carousel-slide" data-index="7">
+                        <img src="images/plat-saumon-entree.jpg" alt="Plats Les Olivades" loading="lazy">
+                        <div class="slide-caption">
+                            <div class="slide-dish"><span class="slide-name">Saumon fumé, petites toasts</span><span class="slide-price">14€</span></div>
+                            <div class="slide-dish"><span class="slide-name">Dessert crème, fruits rouges & meringue</span><span class="slide-price">10€</span></div>
+                            <div class="slide-dish"><span class="slide-name">Cheesecake</span><span class="slide-price">10€</span></div>
+                        </div>
+                    </div>
+                    <div class="carousel-slide" data-index="8">
+                        <img src="images/plat-mousse-chocolat.jpg" alt="Plats Les Olivades" loading="lazy">
+                        <div class="slide-caption">
+                            <div class="slide-dish"><span class="slide-name">Mousse au Chocolat, fruits</span><span class="slide-price">~10€</span></div>
+                            <div class="slide-dish"><span class="slide-name">Gigot d'Agneau, couscous & légumes</span><span class="slide-price">~26€</span></div>
+                            <div class="slide-dish"><span class="slide-name">Tartare de Bœuf, frites & parmesan</span><span class="slide-price">22€</span></div>
+                            <div class="slide-dish"><span class="slide-name">Salade de saison</span><span class="slide-price">12€</span></div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                <button class="carousel-nav carousel-next" aria-label="Suivant">&#10095;</button>
+            </div>
+        </section>
+
+        <!-- LA CARTE -->
+        <section class="menu-section" id="carte">
+            <div class="section-header" data-reveal>
+                <h2 class="section-title">La Carte</h2>
+            </div>
+            <div class="menu-container">
+
+                <!-- ===== MIDI ===== -->
+                <div class="menu-category" data-reveal>
+                    <h3 class="menu-category-title">Déjeuner</h3>
+                    <p class="menu-category-subtitle">Du jeudi au samedi midi & dimanche</p>
+
+                    <!-- Menu Gourmand -->
+                    <div class="menu-gourmand" data-reveal>
+                        <div class="menu-gourmand-header">
+                            <h4>Menu Gourmand</h4>
+                            <div class="price-tag">36 €</div>
+                        </div>
+                        <div class="menu-steps">
+                            <div class="menu-step" data-reveal>
+                                <div class="step-label">Entrées au choix</div>
+                                <div class="step-items">
+                                    <div class="menu-choice"><span>Terrine maison et ses pickles</span></div>
+                                    <div class="menu-choice"><span>Salade de chèvre de Collobrières à la châtaigne</span></div>
+                                    <div class="menu-choice"><span>Cœurs de canard et tagliatelles de courgettes</span></div>
+                                </div>
+                            </div>
+                            <div class="menu-step" data-reveal>
+                                <div class="step-label">Plats au choix</div>
+                                <div class="step-items">
+                                    <div class="menu-choice"><span>Lasagnes de bœuf et salade verte</span></div>
+                                    <div class="menu-choice"><span>Sous-noix de veau à basse température</span></div>
+                                    <div class="menu-choice"><span>Salade de spaghetti au pesto et poulpe grillé</span></div>
+                                </div>
+                            </div>
+                            <div class="menu-step" data-reveal>
+                                <div class="step-label">Desserts au choix</div>
+                                <div class="step-items">
+                                    <div class="menu-choice"><span>Tiramisu framboise pistache</span></div>
+                                    <div class="menu-choice"><span>Éclair mousse à la châtaigne</span></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- À la carte MIDI -->
+                    <div class="menu-alacarte" data-reveal>
+                        <div class="menu-column">
+                            <h4>Entrées</h4>
+                            <div class="menu-item"><span>Salade de chèvre de Collobrières</span><strong>14€</strong></div>
+                            <div class="menu-item"><span>Terrine maison et ses pickles</span><strong>12€</strong></div>
+                            <div class="menu-item"><span>Cœurs de canard</span><strong>14€</strong></div>
+                        </div>
+                        <div class="menu-column">
+                            <h4>Plats</h4>
+                            <div class="menu-item"><span>Tataki de Thon</span><strong>24€</strong></div>
+                            <div class="menu-item"><span>Tartare de Thon</span><strong>24€</strong></div>
+                            <div class="menu-item"><span>Tartare de Bœuf</span><strong>22€</strong></div>
+                            <div class="menu-item"><span>Le Grand Aïoli</span><strong>26€</strong></div>
+                            <div class="menu-item"><span>Poulpe et orzo</span><strong>24€</strong></div>
+                            <div class="menu-item"><span>Sous-noix de veau</span><strong>22€</strong></div>
+                        </div>
+                        <div class="menu-column">
+                            <h4>Desserts</h4>
+                            <div class="menu-item"><span>Tiramisu framboise pistache</span><strong>12€</strong></div>
+                            <div class="menu-item"><span>Éclair mousse châtaigne</span><strong>12€</strong></div>
+                            <div class="menu-item"><span>Crème brûlée lavande</span><strong>10€</strong></div>
+                            <div class="menu-item"><span>Fromage de chèvre local</span><strong>10€</strong></div>
+                            <div class="menu-item"><span>Café gourmand</span><strong>8€</strong></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ===== SOIR ===== -->
+                <div class="menu-category" data-reveal>
+                    <h3 class="menu-category-title">Dîner</h3>
+                    <p class="menu-category-subtitle">Carte évolutive selon les arrivages et le marché</p>
+
+                    <div class="menu-soir-intro" data-reveal>
+                        <p>3 viandes, 3 poissons et un plat végétarien, en fonction des arrivages et du marché.</p>
+                    </div>
+
+                    <div class="menu-alacarte menu-soir" data-reveal>
+                        <div class="menu-column">
+                            <h4>Viandes</h4>
+                            <div class="menu-item"><span>Entrecôte grillée, sauce poivre</span><strong>28€</strong></div>
+                            <div class="menu-item"><span>Magret de Canard rôti, sauce au miel</span><strong>25€</strong></div>
+                            <div class="menu-item"><span>Gigot d'Agneau basse température</span><strong>~26€</strong></div>
+                            <div class="menu-item"><span>Carré d'Agneau en croûte d'herbes</span><strong>~28€</strong></div>
+                            <div class="menu-item"><span>Sous-noix de veau, jus au thym</span><strong>~24€</strong></div>
+                            <div class="menu-item"><span>Filet Mignon de Porc en croûte</span><strong>~22€</strong></div>
+                        </div>
+                        <div class="menu-column">
+                            <h4>Poissons</h4>
+                            <div class="menu-item"><span>Mi-cuit de Thon Rouge, 4 sésames</span><strong>~26€</strong></div>
+                            <div class="menu-item"><span>Filet de Bar poêlé, aneth</span><strong>~26€</strong></div>
+                            <div class="menu-item"><span>Dos de Cabillaud, beurre blanc</span><strong>~24€</strong></div>
+                            <div class="menu-item"><span>Pavé de Saumon, gnocchis maison</span><strong>~24€</strong></div>
+                            <div class="menu-item"><span>Demie Langouste, sauce vierge</span><strong>~30€</strong></div>
+                            <div class="menu-item"><span>Noix de Saint-Jacques snackées</span><strong>~28€</strong></div>
+                        </div>
+                        <div class="menu-column">
+                            <h4>Desserts</h4>
+                            <div class="menu-item"><span>Tiramisu framboise pistache</span><strong>12€</strong></div>
+                            <div class="menu-item"><span>Éclair mousse châtaigne</span><strong>12€</strong></div>
+                            <div class="menu-item"><span>Crème brûlée lavande</span><strong>10€</strong></div>
+                            <div class="menu-item"><span>Fromage de chèvre local</span><strong>10€</strong></div>
+                            <div class="menu-item"><span>Café gourmand</span><strong>8€</strong></div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- AVIS -->
+        <section class="reviews" id="avis">
+            <div class="reviews-header" data-reveal>
+                <div class="rating">
+                    <span class="rating-number" data-count="4.8">0</span>
+                    <span class="rating-total">/ 5</span>
+                </div>
+                <a href="https://maps.app.goo.gl/AFcjvk32zrW3VRHS9" target="_blank" rel="noopener noreferrer" class="maps-link">
+                    Plus d'avis sur Google Maps &#8594;
+                </a>
+            </div>
+            <div class="reviews-track-wrapper">
+                <div class="reviews-track" id="reviewsTrack">
+                    <div class="review-card">
+                        <h4>Nolwenn P.</h4>
+                        <p>"Nous avons trouvé l'accueil, le service et la cuisine exceptionnels."</p>
+                    </div>
+                    <div class="review-card">
+                        <h4>Nico A.</h4>
+                        <p>"Délicieux repas et le sourire des gars qui tiennent la maison est très apprécié."</p>
+                    </div>
+                    <div class="review-card">
+                        <h4>Rajah D.</h4>
+                        <p>"Nico et Alban sont des propriétaires très accueillants. Leur cuisine est excellente."</p>
+                    </div>
+                    <div class="review-card">
+                        <h4>Anthony R.</h4>
+                        <p>"Que du frais et fait maison, au maximum local. C'était délicieux."</p>
+                    </div>
+                    <div class="review-card">
+                        <h4>Thierry L.</h4>
+                        <p>"Un seul mot ! ADORABLE !! Tout y est pour passer un excellent moment !"</p>
+                    </div>
+                    <div class="review-card">
+                        <h4>Lionel S.</h4>
+                        <p>"Famille de 4... Les assiettes étaient vides. C'est un sans faute."</p>
+                    </div>
+                    <!-- Duplicated for infinite scroll -->
+                    <div class="review-card">
+                        <h4>Nolwenn P.</h4>
+                        <p>"Nous avons trouvé l'accueil, le service et la cuisine exceptionnels."</p>
+                    </div>
+                    <div class="review-card">
+                        <h4>Nico A.</h4>
+                        <p>"Délicieux repas et le sourire des gars qui tiennent la maison est très apprécié."</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- RÉSERVATION -->
+        <section class="reservation" id="reservation">
+            <div class="reservation-content" data-reveal>
+                <h2 class="section-title">Réserver une table</h2>
+                <p>Appelez-nous pour réserver votre table</p>
+                <a href="tel:0494281624" class="btn-phone">04 94 28 16 24</a>
+                <div class="reservation-details">
+                    <div class="detail-item">
+                        <span class="detail-label">Adresse</span>
+                        <span>5 Pl. de la Libération, 83610 Collobrières</span>
+                    </div>
+                    <div class="detail-item">
+                        <span class="detail-label">Horaires</span>
+                        <span>Jeudi - Samedi : 12h00 - 14h00 & 19h00 - 00h00</span>
+                    </div>
+                    <div class="detail-item">
+                        <span class="detail-label">Dimanche</span>
+                        <span>12h00 - 14h00 & 19h00 - 00h00</span>
+                    </div>
+                    <div class="detail-item">
+                        <span class="detail-label">Fermé</span>
+                        <span>Mercredi</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ===== FOOTER ===== -->
+    <footer id="footer">
+        <div class="footer-grid">
+            <div class="footer-col">
+                <h4>Contact</h4>
+                <a href="tel:0494281624">04 94 28 16 24</a>
+                <p>5 Pl. de la Libération<br>83610 Collobrières</p>
+            </div>
+            <div class="footer-col">
+                <h4>Services</h4>
+                <p>Repas sur place<br>Sur notre terrasse ombragée</p>
+            </div>
+            <div class="footer-col">
+                <h4>Horaires</h4>
+                <p>Jeudi - Samedi<br>12h00 - 14h00 & 19h00 - 00h00<br>Dimanche : 12h00 - 14h00 & 19h00 - 00h00<br>Fermé mercredi</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Les Olivades</p>
+            <a href="#mentions-legales">Mentions légales</a>
+        </div>
+    </footer>
+
+    <!-- ===== LIGHTBOX ===== -->
+    <div id="lightbox" role="dialog" aria-hidden="true">
+        <button class="lightbox-close" aria-label="Fermer">&#10005;</button>
+        <button class="lightbox-prev" aria-label="Précédente">&#10094;</button>
+        <img src="" alt="Photo agrandie du plat">
+        <button class="lightbox-next" aria-label="Suivante">&#10095;</button>
+    </div>
+
+    <!-- ===== SCRIPTS ===== -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://unpkg.com/lenis@1.0.42/dist/lenis.min.js"></script>
+    <script src="js/main.js?v=2"></script>
+
+</body>
+</html>
