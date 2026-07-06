@@ -1,0 +1,26 @@
+Guide d'installation - Formulaire de contact
+=============================================
+
+Bonjour,
+
+Pour recevoir les messages de notre site web (newsletter et carte fidelite), voici les etapes a suivre :
+
+1. Creer un compte
+------------------
+- Allez sur https://formspree.io
+- Cliquez sur "Get Started" puis "Sign Up"
+- Entrez votre email et creez un mot de passe
+
+2. Creer un formulaire
+----------------------
+- Une fois connecte, cliquez sur "New Form"
+- Donnez-lui un nom (ex: "Site Au Rendez-Vous")
+- Vous aurez une URL du genre : https://formspree.io/f/xxxxxxxx
+- Copiez cette URL et envoyez-la au developpeur
+
+3. C'est tout !
+---------------
+- Des que quelqu'un s'inscrit sur le site, vous recevrez un email avec son nom, son email et son message
+- Vous pouvez aussi voir tous les messages en allant sur https://formspree.io et en vous connectant
+
+Assistance : En cas de probleme, contactez le developpeur.
