@@ -1,3 +1,81 @@
+// ==================== SCROLL PROGRESS BAR ====================
+const progressBar = document.getElementById('scrollProgressBar');
+
+window.addEventListener('scroll', () => {
+    const scrollTop = window.pageYOffset;
+    const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+    const scrollPercent = (scrollTop / docHeight) * 100;
+    if (progressBar) {
+        progressBar.style.width = scrollPercent + '%';
+    }
+});
+
+// ==================== STAGGERED REVEALS ====================
+const staggerObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            const delay = parseInt(entry.target.dataset.delay || '0');
+            setTimeout(() => {
+                entry.target.classList.add('visible');
+            }, delay);
+            staggerObserver.unobserve(entry.target);
+        }
+    });
+}, { threshold: 0.1, rootMargin: '0px 0px -30px 0px' });
+
+document.querySelectorAll('.menu-display-item').forEach((el, i) => {
+    const col = el.closest('.menu-display-column');
+    const isRight = col && Array.from(col.parentNode.children).indexOf(col) === 1;
+    el.classList.add(isRight ? 'reveal-stagger-right' : 'reveal-stagger');
+    el.dataset.delay = i * 30;
+    staggerObserver.observe(el);
+});
+
+document.querySelectorAll('.menu-display-category h4').forEach((el, i) => {
+    el.classList.add('reveal-stagger-title');
+    el.dataset.delay = i * 80;
+    staggerObserver.observe(el);
+});
+
+document.querySelectorAll('.newsletter-form input, .newsletter-form textarea, .newsletter-form button').forEach((el, i) => {
+    el.classList.add('reveal-stagger');
+    el.style.transitionDelay = `${i * 0.08}s`;
+    el.dataset.delay = i * 80;
+    staggerObserver.observe(el);
+});
+
+document.querySelectorAll('.contact-item').forEach((el, i) => {
+    el.classList.add('reveal-stagger');
+    el.dataset.delay = i * 100;
+    staggerObserver.observe(el);
+});
+
+document.querySelectorAll('.form-row').forEach((el, i) => {
+    el.classList.add('reveal-stagger');
+    el.dataset.delay = i * 80;
+    staggerObserver.observe(el);
+});
+
+document.querySelectorAll('.story-text p').forEach((el, i) => {
+    el.classList.add('reveal-stagger');
+    el.dataset.delay = i * 120;
+    staggerObserver.observe(el);
+});
+
+document.querySelectorAll('.story-image, .map-container').forEach((el, i) => {
+    el.classList.add('reveal-stagger');
+    el.dataset.delay = i * 150;
+    staggerObserver.observe(el);
+});
+
+document.querySelectorAll('.footer-col').forEach((el, i) => {
+    el.classList.add('reveal');
+    el.style.transitionDelay = `${i * 0.1}s`;
+    observer.observe(el);
+});
+
+
+
 // ==================== THREE.JS BACKGROUND ====================
 const canvas = document.getElementById('bg-canvas');
 const scene = new THREE.Scene();
